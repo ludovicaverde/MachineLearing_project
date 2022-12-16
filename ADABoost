@@ -1,0 +1,6 @@
+
+from sklearn.ensemble import AdaBoostClassifier
+classifier = AdaBoostClassifier()
+parameters = {'n_estimators' : [5000], 'learning_rate' : [0.01]}
+
+hyperp_search(classifier, parameters)
